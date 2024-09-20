@@ -22,6 +22,10 @@ namespace Freelando.Dados.Mapeamentos
             entity.Property(e => e.Descricao)
                 .HasColumnType("nvarchar(200)")
                 .HasColumnName("DS_Projeto");
+            entity
+                .Property(e => e.Status)
+                .HasConversion(fromObj => fromObj.ToString(),
+                fromDb => (StatusProjeto)Enum.Parse(typeof(StatusProjeto), fromDb));
         }
     }
    }

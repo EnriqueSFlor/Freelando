@@ -28,6 +28,8 @@ if (app.Environment.IsDevelopment())
 }
 
 app.AddEndPointEspecialidades();
+app.AddEndPointProjeto();
+app.AddEndPointContrato();
 app.UseHttpsRedirection();
 
 app.Run();
