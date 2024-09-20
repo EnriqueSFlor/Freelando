@@ -17,8 +17,7 @@ namespace Freelando.Dados.Mapeamentos
             entity.Property(e => e.Id).HasColumnName("Id_Contrato");
             entity.OwnsOne(e => e.Vigencia, vigencia =>
             {
-                vigencia.Property(v => v.DataInicio).HasColumnName("Data_Inicio");
-                vigencia.Property(v => v.DataEncerramento).HasColumnName("Data_Encerramento");
+             
             });
         }
 
