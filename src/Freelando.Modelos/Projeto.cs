@@ -12,6 +12,8 @@ public class Projeto
     public string? Titulo { get; set; }
 
     public string? Titulo2 { get; set; }
+
+    public string? Titulo3 { get; set; }
     public  string? Descricao { get; set; }
     public StatusProjeto Status { get; set; }
 
